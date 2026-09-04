@@ -1,42 +1,127 @@
 <!DOCTYPE html>
-<!--Doctype indica que el tipo de documento es HTML-->
-<!--ENTREGABLE 2-->
-<!--Este desarrollo web es diseñado por Aldo Rodríguez-->
+<!-- Doctype indica el tipo de coumento es html-->
+ <!--Entregable 2-->
+ <!--Este desarrollo web es diseñado por Aldo Sait Rodríguez Garcái-->
 <html lang="es">
-    <!--Lang esta indicando que es español-->
+    <!--Lang esta indicado que es español-->
 <head>
-    <!--Dentro del Head van las configuraciones de la app o sitio web-->
+    <!--Dentro del head van las configuraciones de la app o sitio web-->
     <meta charset="UTF-8">
-    <!--Este meta dato permite todos los caracteres-->
+    <!--este metadato permite todos los caracteres-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- El meta dato de viwepoint es para que se adapte a cualquier pantalla-->
-    <meta name="author" content="Aldo Rodriguez">
-    <title>CINESPLASH</title>
-    <!-- El titulo como voy a aparecer en la web-->
-    <link rel="stylesheet" href="css/styles.css">
+    <!--El meta dato view point es para que se adapte a cualquier pantalla-->
+    <meta name="author" conten="Pablo Picazo Carrillo">
+    <title>Restaurante pablo</title>
+    <!--El titulo como voy a aparecer en la web-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--link rel enlaza con la carpeta y archivo del css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header class="header">
+
+<header class="header">
     <div class="container header-inner">
       <a class="logo" href="#">
-        <img src="img/ASADEROS.jpg" alt="Logo Restaurante Aldo" height="70" />
+        <img src="img/ASADEROS.jpg" alt="logo cafeteria" height="70" />
       </a>
       <nav class="main-nav" id="mainNav">
         <ul>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#reservas">Reservas</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li><a class="btn-dona" href="#shop">Dona</a></li>
+          <li><a href="#menu">menu</a></li>
+          <li><a href="#reservas">reservas</a></li>
+          <li><a href="#contacto">contacto</a></li>
+          <li><a class="btn-shop" href="#shop">Dona</a></li>
         </ul>
       </nav>
       <button id="menuToggle" class="menu-toggle">☰</button>
     </div>
-  </header>
+  </header>    
 
-<!--Aqui inicia el footer-->
-VALERIA SAN NICOLAS*SOLIS, Ahora
-<footer>
+  <!-- AQUÍ INICIA EL MAIN   -->
+  <main>
+    <!-- HERO con video, si no quiero video, pendiente con cambiarlo -->
+    <section class="hero video-hero">
+      <video class="hero-video" id="heroVideo" autoplay loop playsinline>
+        <source src="img/Video_pies_con_cora.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+
+      <!--estos son los botones que estan dentro del video-->
+      <div class="hero-content container">
+        <div class="hero-actions">
+          <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">compra en línea</a>
+          <a class="btn outline" href="#voluntariado">Reserva</a>
+        </div>
+
+        <!--Estas tarjetas es para colocar estadisticas y la clase de staf es para colocarlo datos-->
+
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-number">+20 </div>
+            <div class="stat-label">platillos</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+1000</div>
+            <div class="stat-label">sabores</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">infinitas</div>
+            <div class="stat-label">experiencias</div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!--Fin hero y cierra las estadísticas y todo-->
+
+<!--Aqui hay tres tarjetas para destacar proyectos, ventas, serivicios, etc-->
+
+    <section id="proyectos" class="projects container">
+      <h2>Cortes</h2>
+      <p class="lead">Contamos con una grtan variedad de cortes desde arrachera hasta rib eye y T-bone, sazonados con el tipico y caracteristico sabor del norte</p>
+
+      <div class="project-cards">
+        <article class="card">
+          <div class="card-img" id="antioquia-caucasia"></div>
+          <div class="card-body">
+            <h3>Bebidas</h3>
+            <p>Tenemos nuestro menu de bebidas que son una mayor parte de cocteleria, contamos con una gran variedad de licores y alcohol de su preferencia
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img" id="guajira"></div>
+          <div class="card-body">
+            <h3>Postres</h3>
+            <p>Contamos con un menu especializado de postres, con una gran variedad de cheescakes, pasteles, gelatinas y postres tradicionales
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img" id="ASADEROS"></div>
+          <div class="card-body">
+            <h3>Sabores UNICOS</h3>
+            <p>En el punto verde nuestros sabores son incomparables pero sobre todo UNICOS e INIGUALABLES</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <h2>¡No te lo pierdas!</h2>
+          <p>No te quedes sin probar el PUNTO VERDE el mejor restaurante con las mejores Comidas
+             ven ahora y compruebalo TU mismo</p>
+        </div>
+        <form id="subscribeForm" class="subscribe-form" novalidate>
+          <input id="email" type="email" placeholder="Tu correo electrónico" required />
+          <button class="btn primary" type="submit">Suscribirme</button>
+        </form>
+        <div id="formMessage" class="form-message"></div>
+      </div>
+    </section>
+  </main>
+
+   <footer>
 
   <div class="footer-social">
     <div class="container social-icons">
@@ -66,12 +151,10 @@ VALERIA SAN NICOLAS*SOLIS, Ahora
 
   <div class="footer-bottom">
     <div class="container">
-      &copy; <span id="anio"></span> DEL NORTH CAPS
+      &copy; <span id="anio"></span> PUNTO VERDE
     </div>
   </div>
 
 </footer>
-
-
 </body>
 </html>
