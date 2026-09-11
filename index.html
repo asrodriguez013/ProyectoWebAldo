@@ -1,116 +1,149 @@
 <!DOCTYPE html>
-<!-- Doctype indica el tipo de coumento es html-->
- <!--Entregable 2-->
- <!--Este desarrollo web es diseñado por Aldo Sait Rodríguez Garcái-->
+<!--Doctype indica que el tipo de documento es HTML-->
+<!--ENTREGABLE 2-->
+<!--Este desarrollo web es diseñado por Aldo Rodríguez-->
 <html lang="es">
-    <!--Lang esta indicado que es español-->
+    <!--Lang esta indicando que es español-->
 <head>
-    <!--Dentro del head van las configuraciones de la app o sitio web-->
+    <!--Dentro del Head van las configuraciones de la app o sitio web-->
     <meta charset="UTF-8">
-    <!--este metadato permite todos los caracteres-->
+    <!--Este meta dato permite todos los caracteres-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--El meta dato view point es para que se adapte a cualquier pantalla-->
-    <meta name="author" conten="Pablo Picazo Carrillo">
-    <title>Restaurante pablo</title>
-    <!--El titulo como voy a aparecer en la web-->
-    <link rel="stylesheet" href="css/style.css">
-    <!--link rel enlaza con la carpeta y archivo del css-->
+    <!-- El meta dato de viwepoint es para que se adapte a cualquier pantalla-->
+    <meta name="author" content="Aldo Sait">
+    <title>Restaurante</title>
+    <!-- El titulo como voy a aparecer en la web-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Link rel enlaza con la carpeta y el archivo css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
-<header class="header">
+  </head>
+<body>
+  <footer>
+    <header class="header">
     <div class="container header-inner">
       <a class="logo" href="#">
-        <img src="img/ASADEROS.jpg" alt="logo cafeteria" height="70" />
+        <img src="img/ASADEROS.jpg" alt="Logo Restaurante Aldo" height="70" />
       </a>
       <nav class="main-nav" id="mainNav">
         <ul>
-          <li><a href="#menu">menu</a></li>
-          <li><a href="#reservas">reservas</a></li>
-          <li><a href="#contacto">contacto</a></li>
-          <li><a class="btn-shop" href="#shop">Dona</a></li>
+          <li><a href="#proyectos">Acerca de:</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a class="btn-shop" href="#shop">Shop</a></li>
         </ul>
       </nav>
       <button id="menuToggle" class="menu-toggle">☰</button>
     </div>
-  </header>    
+  </header>
 
-  <!-- AQUÍ INICIA EL MAIN   -->
-  <main>
-    <!-- HERO con video, si no quiero video, pendiente con cambiarlo -->
-    <section class="hero video-hero">
-      <video class="hero-video" id="heroVideo" autoplay loop playsinline>
-        <source src="img/Video_pies_con_cora.mp4" type="video/mp4" />
-      </video>
-      <div class="hero-overlay"></div>
+  <!-- AQUÍ INICIA EL MAIN-->
+  <main id="inicio">
+    <!-- HERO con video, pendiente cambiarlo -->
+    <!--section class="hero video-hero"-->
+      <!--video class="hero-video" id="heroVideo" autoplay loop playsinline-->
+        <!--source src="img/Video_pies_con_cora.mp4" type="video/mp4" /-->
+      <!--/video-->
+      <!--div class="hero-overlay"></div-->
 
-      <!--estos son los botones que estan dentro del video-->
-      <div class="hero-content container">
-        <div class="hero-actions">
-          <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">compra en línea</a>
-          <a class="btn outline" href="#voluntariado">Reserva</a>
+      <!--Estos son los botones que esta dentro del VIDEO-->
+
+      
+    </section> <!--Fin hero y cierra las estadísticas y todo-->
+
+    <!-- CARRUSEL DE IMÁGENES / LANZAMIENTOS / PRODUCTOS ETC -->
+    <section id="lanzamientos" class="carousel-section container">
+      <h2>Nuevos Lanzamientos</h2>
+
+  
+      <div class="carousel" id="carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide">
+            <img src="img/carrusel1.jpg" alt="Consultorías TechIY">
+            <p class="carousel-caption">Consultorías</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="img/carrusel2.jpg" alt="Talleres TechIY">
+            <p class="carousel-caption">Talleres</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="img/carrusel3.jpg" alt="Asesorías TechIY">
+            <p class="carousel-caption">Asesorías</p>
+          </div>
         </div>
 
-        <!--Estas tarjetas es para colocar estadisticas y la clase de staf es para colocarlo datos-->
-
+            <div class="hero-content container">
+        <div class="hero-actions">
+          <a class="btn primary" href="https://forms.gle/9bGxM41iZmSR8NVj6">Promociones de Temporada</a>
+          <a class="btn outline" href="#voluntariado">Mapa</a>
+        </div>
+<!-- Esta tarjeta es para colocar estadisticas y la clase de stat es para colocar
+ datos-->
         <div class="stats-grid">
           <div class="stat">
-            <div class="stat-number">+20 </div>
-            <div class="stat-label">platillos</div>
+            <div class="stat-number">+10 sucursarsales en toda la republica</div>
+            <div class="stat-label">Conoce nuestras sucursales</div>
           </div>
           <div class="stat">
-            <div class="stat-number">+1000</div>
-            <div class="stat-label">sabores</div>
+            <div class="stat-number">+300 platillos</div>
+            <div class="stat-label">Descrubre nuestra gran variedad de saboress</div>
           </div>
           <div class="stat">
-            <div class="stat-number">infinitas</div>
-            <div class="stat-label">experiencias</div>
+            <div class="stat-number">Visitanos</div>
+            <div class="stat-label">VIVE TU EXPERIENCIA</div>
           </div>
         </div>
       </div>
-    </section> 
-    <!--Fin hero y cierra las estadísticas y todo-->
 
-<!--Aqui hay tres tarjetas para destacar proyectos, ventas, serivicios, etc-->
+
+        <button class="carousel-btn prev" id="carouselPrev" aria-label="Anterior">&#10094;</button>
+        <button class="carousel-btn next" id="carouselNext" aria-label="Siguiente">&#10095;</button>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </section>
+    <!-- FIN CARRUSEL -->
+
+
+    <!-- AQUI HAY VENTAS TRES TARJETAS PARA DESTACAR PROYECTOS, ,VENTAS, PRODUCTOS, SERVICIOS-->
 
     <section id="proyectos" class="projects container">
-      <h2>Cortes</h2>
-      <p class="lead">Contamos con una grtan variedad de cortes desde arrachera hasta rib eye y T-bone, sazonados con el tipico y caracteristico sabor del norte</p>
+      <h2>Información</h2>
+      <p class="lead">Descubre todo que BEEF te ofrece 
+.</p>
 
       <div class="project-cards">
         <article class="card">
           <div class="card-img" id="antioquia-caucasia"></div>
           <div class="card-body">
             <h3>Bebidas</h3>
-            <p>Tenemos nuestro menu de bebidas que son una mayor parte de cocteleria, contamos con una gran variedad de licores y alcohol de su preferencia
-            </p>
+            <p>Contamos con nuestro menu de bebidas y cocteleria, bebidas con alcohol y sin alcohol.</p>
           </div>
         </article>
         <article class="card">
           <div class="card-img" id="guajira"></div>
           <div class="card-body">
             <h3>Postres</h3>
-            <p>Contamos con un menu especializado de postres, con una gran variedad de cheescakes, pasteles, gelatinas y postres tradicionales
-            </p>
+            <p>Descubre nuestro menu de postres con una variedad de pasteles, gelatinas y tradicionales mexicano.</p>
           </div>
         </article>
         <article class="card">
-          <div class="card-img" id="ASADEROS"></div>
+          <div class="card-img" id="cordoba"></div>
           <div class="card-body">
-            <h3>Sabores UNICOS</h3>
-            <p>En el punto verde nuestros sabores son incomparables pero sobre todo UNICOS e INIGUALABLES</p>
+            <h3>Carne</h3>
+            <p>Contamos con una gran variedad de cortes desde arrachera hasta ribeye y T-bone.</p>
           </div>
         </article>
       </div>
     </section>
+    <!--AQUI INICIA EL CONACTO Y LAS NOTICIAS-->
 
     <section id="contacto" class="newsletter">
       <div class="container newsletter-inner">
         <div>
-          <h2>¡No te lo pierdas!</h2>
-          <p>No te quedes sin probar el PUNTO VERDE el mejor restaurante con las mejores Comidas
-             ven ahora y compruebalo TU mismo</p>
+          <h2>¡No te pierdas lo último!</h2>
+          <p>Ven a probar nuestros nuevos sabores de temporada.</p>
         </div>
         <form id="subscribeForm" class="subscribe-form" novalidate>
           <input id="email" type="email" placeholder="Tu correo electrónico" required />
@@ -120,8 +153,24 @@
       </div>
     </section>
   </main>
-
-   <footer>
+  <!-- AQUI INICIA EL FOOTER-->
+  <footer id="contacto">
+    <div class="footer-grid">
+      <div class="contacto">
+        <h3>Contacto</h3>
+        <address>
+          <p>
+            <i class="fa fa-map-marker-alt"></i>
+            <a href="https://maps.app.goo.gl/2S2LX2g77ob4ynui8" target="_blank" rel="noreferrer noopener">
+            <span style="color: #b9ddff; font-weight: bold">Ubicación: </span> BEEF ROMA
+            </a>
+          </p>
+          <p>
+            <i class="fa fa-phone"></i>
+            <span style="color: #b9ddff; font-weight: bold">Teléfono: </span> <a href="tel:+5519224580"> 55 1922 4580</a>
+          </p>
+        </address>
+      </div>
 
   <div class="footer-social">
     <div class="container social-icons">
@@ -130,7 +179,7 @@
         <i class="fa-brands fa-facebook-f"></i>
       </a>
 
-      <a href="https://www.instagram.com/" aria-label="Instagram">
+      <a href="https://www.instagram.com/saitrg_59?igsi=MTFrNThyY2w2MmdyYw%3D%3D&utm_source=qr " aria-label="Instagram">
         <i class="fa-brands fa-instagram"></i>
       </a>
 
@@ -151,10 +200,12 @@
 
   <div class="footer-bottom">
     <div class="container">
-      &copy; <span id="anio"></span> PUNTO VERDE
+      &copy; <span id="anio"></span>  BEEF
     </div>
   </div>
 
 </footer>
+
+<script src="JS/script.js"></script>
 </body>
 </html>
